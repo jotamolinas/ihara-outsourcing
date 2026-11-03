@@ -15,6 +15,20 @@
     <script>
       gtag('event', 'conversion', {'send_to': 'AW-701598609/6brYCKeL9-IcEJGXxs4C'});
     </script>
+    <!-- WhatsApp Conversion Tracking for Google Ads -->
+    <script>
+      document.addEventListener('click', function (e) {
+        let target = e.target.closest('a');
+        if (target && target.href && (target.href.includes('wa.me') || target.href.includes('api.whatsapp.com'))) {
+          if (typeof window.gtag === 'function') {
+            window.gtag('event', 'conversion', {
+              'send_to': 'AW-18551375914'
+            });
+            console.log('Google Ads Conversion Tracked for WhatsApp Click');
+          }
+        }
+      }, true);
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ihara Outsourcing - Servicios</title>
